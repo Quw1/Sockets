@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client</title>
+</head>
+<body>
+
+
+<div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
+    <!-- Position it: -->
+    <!-- - `.toast-container` for spacing between toasts -->
+    <!-- - `.position-absolute`, `top-0` & `end-0` to position the toasts in the upper right corner -->
+    <!-- - `.` to prevent the toasts from sticking to the edge of the container  -->
+    <div class="toast-container position-absolute top-50 end-0" id="t-cont">
+
+        <!-- Then put toasts within -->
+
+
+    </div>
+</div>
+<div id="main">
+    <form id="single">
+        <div class="d-flex justify-content-center gap-4" style="margin-top: 5em;">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                       value="1" checked/>
+                <label class="form-check-label" id="inlineLabel1" for="inlineRadio1">0</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                       value="2"/>
+                <label class="form-check-label" id="inlineLabel2" for="inlineRadio2">0</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                       value="3"/>
+                <label class="form-check-label" id="inlineLabel3" for="inlineRadio3">0</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                       value="4"/>
+                <label class="form-check-label" id="inlineLabel4" for="inlineRadio4">0</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5"
+                       value="5"/>
+                <label class="form-check-label" id="inlineLabel5" for="inlineRadio5">0</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6"
+                       value="6"/>
+                <label class="form-check-label" id="inlineLabel6" for="inlineRadio6">0</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7"
+                       value="7"/>
+                <label class="form-check-label" id="inlineLabel7" for="inlineRadio7">0</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8"
+                       value="8"/>
+                <label class="form-check-label" id="inlineLabel8" for="inlineRadio8">0</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9"
+                       value="9"/>
+                <label class="form-check-label" id="inlineLabel9" for="inlineRadio9">0</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio10"
+                       value="10"/>
+                <label class="form-check-label" id="inlineLabel10" for="inlineRadio10">0</label>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-5 gap-4">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioColor1"
+                       value="1" checked/>
+                <label class="form-check-label" id="inlineColorLabel1" for="inlineRadioColor1">1</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioColor2"
+                       value="2"/>
+                <label class="form-check-label" id="inlineColorLabel2" for="inlineRadioColor2">2</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioColor3"
+                       value="3"/>
+                <label class="form-check-label" id="inlineColorLabel3" for="inlineRadioColor3">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioColor4"
+                       value="4"/>
+                <label class="form-check-label" id="inlineColorLabel4" for="inlineRadioColor4">1</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioColor5"
+                       value="5"/>
+                <label class="form-check-label" id="inlineColorLabel5" for="inlineRadioColor5">2</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioColor6"
+                       value="6"/>
+                <label class="form-check-label" id="inlineColorLabel6" for="inlineRadioColor6">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioColor7"
+                       value="7"/>
+                <label class="form-check-label" id="inlineColorLabel7" for="inlineRadioColor7">1</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioColor8"
+                       value="8"/>
+                <label class="form-check-label" id="inlineColorLabel8" for="inlineRadioColor8">2</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioColor9"
+                       value="9"/>
+                <label class="form-check-label" id="inlineColorLabel9" for="inlineRadioColor9">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioColor10"
+                       value="10"/>
+                <label class="form-check-label" id="inlineColorLabel10" for="inlineRadioColor10">3</label>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5 gap-2">
+            <button type="button" class="btn btn-primary" id="button">Change</button>
+            <button type="button" class="btn btn-primary" id="button-all">Change All</button>
+        </div>
+        <div class="d-flex justify-content-center mt-5 gap-2">
+
+            <div class="col-md-2">
+                <label for="test-amount-sel" class="form-label">Test amount (for each variable)</label>
+                <select class="form-select" id="test-amount-sel" name="test-amount" required aria-describedby="test-amount-sel-feedback">
+                    <option selected disabled value="">Choose test amount...</option>
+                    <option>1</option>
+                    <option>10</option>
+                    <option>100</option>
+                </select>
+<!--                <div id="test-amount-sel-feedback position-absolute" class="invalid-feedback">-->
+<!--                    Please select amount of tests.-->
+<!--                </div>-->
+            </div>
+            <button type="button" class="btn btn-primary align-self-end" id="button-test-1">Test socket</button>
+        </div>
+        <div class="d-flex justify-content-center mt-5 gap-2">
+            <samp>Tests completed overall:</samp><samp id="t-comp">0</samp>
+        </div>
+        <div class="d-flex justify-content-center mt-1 gap-2">
+            <samp>Tests completed successfully:</samp><samp id="t-comp-s">0</samp>
+        </div>
+    </form>
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+    const colors = ['', '🔴', '🟠', '🟡', '🟢', '🔵', '🟣', '🟤', '⚫', '⚪', '🏝️']
+    let toastCount = 0
+    let toastList = []
+    let startTimer
+    let min = sec = ms = 0
+    let testingRunning = 0
+
+    $(document).ready(() => {
+        $.post("/ajax",
+            {
+                toDo: 'getAll',
+            },
+            (data, status) => {
+                for (let i = 1; i <= 10; i++) {
+                    $(`#inlineLabel${i}`).html($(`#inlineRadio${i}`).attr("value") + ": " + colors[data['response'][i]])
+                }
+                console.log("200", data)
+            }).fail((xhr, status, error) => {
+            if (xhr.status == 500) {
+                doModal('Error: Socket Disconnect', 'Socket was closed, please check whether the server is running and reboot the client', "", 1)
+            }
+        });
+
+        for (let i = 1; i <= 10; i++) {
+            $(`#inlineColorLabel${i}`).html(colors[i])
+        }
+
+
+        let doToast = (title, body) => {
+            let toast = `<div class="toast" role="alert" aria-live="assertive" aria-atomic="true"> <div class="toast-header"> <strong class="me-auto">${title}</strong> <small class="text-muted">just now</small> <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> </div> <div class="toast-body">${body}</div> </div>`
+            let toastJQ = $(toast)
+            toastList.push(toastJQ)
+            toastCount++
+            if (toastCount > 4) {
+                toastList[0].toast('hide')
+                toastList[0].remove()
+                toastList.splice(0, 1)
+                toastCount--
+            }
+            toastJQ.appendTo('#t-cont').toast('show')
+            setTimeout(() => {
+                try {
+                    toastJQ.remove()
+                } catch (e) {
+                    console.log(e)
+                }
+
+            }, 8000)
+        }
+
+        let doModal = (title, body, btn = "", stat = 0) => {
+            let staticEl = ""
+            let btnEl = ""
+            let closeEl = `<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>`
+            if (stat) {
+                staticEl = `data-bs-backdrop="static" data-bs-keyboard="false"`
+                closeEl = ""
+            }
+            if (btn) btnEl = `<button type="button" class="btn btn-primary" data-bs-dismiss="modal">${btn}</button>`
+
+            let modal = `<div class="modal fade" id="staticBackdrop" ${staticEl} tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">${title}</h5>
+                                ${closeEl}
+                              </div>
+                              <div class="modal-body">
+                                ${body}
+                              </div>
+                              <div class="modal-footer">
+                                ${btnEl}
+                              </div>
+                            </div>
+                          </div>
+                        </div>`
+
+            let modalJQ = $(modal)
+            modalJQ.appendTo('#main')
+            let myModalEl = document.querySelector('#staticBackdrop')
+            let myModal = bootstrap.Modal.getOrCreateInstance(myModalEl)
+            myModalEl.addEventListener('hidden.bs.modal', function (event) {
+                $('#staticBackdrop').remove()
+            })
+            myModal.show()
+
+        }
+
+        let getRandomFloat = (min, max, decimals) => {
+            const str = (Math.random() * (max - min) + min).toFixed(decimals);
+
+            return parseFloat(str);
+        }
+
+        let randomInteger = (min, max) => {
+            let rand = min + Math.random() * (max + 1 - min);
+            return Math.floor(rand);
+        }
+
+
+        let doJob = (c_num, c_val) => {
+
+            $.post("/ajax",
+                {
+                    toDo: 'putOne',
+                    cNum: c_num,
+                    cVal: c_val,
+                },
+                (data, status) => {
+                    console.log(data)
+                    data = data['response']
+
+
+                    let title, body = ''
+                    let color = colors[c_val]
+                    if (data == '!OK') {
+                        title = '✅ Success'
+                        body = `Data for ${c_num} successfully changed to ${color}.`
+                        doToast(title, body)
+                        $(`#inlineLabel${c_num}`).html($(`#inlineRadio${c_num}`).attr("value") + ": " + color)
+                    } else if (data == '!DEN') {
+                        title = '⚠ Access denied'
+                        body = `Access for changing ${c_num} to ${color} denied. Trying again...`
+                        doToast(title, body)
+                        setTimeout(doJob(c_num, c_val), getRandomFloat(0.1, 0.3, 2))
+
+                    } else {
+                        title = '❗ Unexpected error'
+                        body = data
+                        doToast(title, body)
+                    }
+
+
+                })
+        }
+
+
+        let doTestJob = (c_num, c_val) => {
+            return new Promise((resolve, reject) => {
+
+                $.post("/ajax",
+                    {
+                        toDo: 'putOne',
+                        cNum: c_num,
+                        cVal: c_val,
+                    },
+                    (data, status) => {
+                        data = data['response']
+
+                        let color = colors[c_val]
+                        if (data == '!OK') {
+
+                            $(`#inlineLabel${c_num}`).html($(`#inlineRadio${c_num}`).attr("value") + ": " + color)
+                            resolve('OK');
+
+                        } else if (data == '!DEN') {
+
+                            resolve('DEN')
+
+                        } else {
+                            let title = '❗ Unexpected error'
+                            let body = data
+                            doToast(title, body)
+                            reject(Error(data))
+                        }
+                    });
+            });
+        };
+
+        const sleep = ms => {
+            return new Promise(r => setTimeout(r, ms))
+        }
+
+
+        $("#button").click(function () {
+            let newData = $('form#single').serializeArray();
+            let c_num = newData[0].value;
+            let c_val = newData[1].value;
+
+            doJob(c_num, c_val);
+        });
+
+        $("#button-all").click(function () {
+            let newData = $('form#single').serializeArray();
+            let c_val = newData[1].value;
+
+            for (let i = 1; i <= 10; i++) {
+                doJob(i, c_val)
+            }
+        });
+
+        $("#button-test-1").click(() => {
+            let newData = $('form#single').serializeArray()[2].value;
+            if (newData == "") {
+                $('#test-amount-sel').addClass('is-invalid')
+                return
+            }
+            $('#test-amount-sel').removeClass('is-invalid')
+            if (testingRunning) {
+                doToast('⚠ Testing is process', 'There\'s another testing going on right now, please wait until it\'s fnished.')
+                return
+            }
+
+            $('#t-comp').text(0)
+            $('#t-comp-s').text(0)
+
+
+            testingRunning = 1
+            let amount = newData
+            let varOverallCounter = {}
+            let threadsDone = 0
+            for (let i = 1; i <= 10; i++) {
+                varOverallCounter[i] = 0
+            }
+
+
+            startTimer = setInterval(() => {
+                ms++;
+                if (ms == 100) {
+                    sec++;
+                    ms = 0;
+                }
+                if (sec == 60) {
+                    min++;
+                    sec = 0;
+                }
+            }, 10)
+
+            for (let i = 1; i <= 10; i++) {
+                (async () => {
+
+
+                    let tLeft = amount
+                    while (tLeft > 0) {
+
+                        let res = await doTestJob(i, randomInteger(1, 10));
+                        if (res == 'OK') {
+                            tLeft--
+                            $('#t-comp-s').text(parseInt($('#t-comp-s').text()) + 1)
+                        }
+                        varOverallCounter[i]++
+                        $('#t-comp').text(parseInt($('#t-comp').text()) + 1)
+                        await sleep(randomInteger(100, 300))
+
+                    }
+                })().then(() => {
+                    threadsDone++
+                    if (threadsDone == 10) {
+                        clearInterval(startTimer)
+
+                        let body = `Each variable has been changed ${amount} times. Tried:<br><br>`
+                        for (let c in varOverallCounter) {
+                            body += `#${c}: ${varOverallCounter[c]} times<br>`
+                        }
+                        body += `<br>Time used: ${min}:${sec}:${ms}`
+                        min = sec = ms = 0
+
+                        doModal('Test Result', body, 'Close')
+                        testingRunning = 0
+                    }
+                })
+            }
+        });
+
+
+        // End of DocReady
+    });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
