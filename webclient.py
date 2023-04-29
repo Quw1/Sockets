@@ -6,7 +6,7 @@ from time import sleep
 from random import randint, uniform
 
 
-SERVER = 'xxx.xxx.xxx.xxx1'
+SERVER = 'xxx.xxx.xxx.xxx'
 ADDR = SERVER, PORT
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
